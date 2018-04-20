@@ -14,6 +14,7 @@
 # Binary directory
 BUILD*
 build*
+dist*
 
 # qtcreator
 CMakeLists.txt.user*
@@ -25,6 +26,9 @@ CMakeLists.txt.user*
 # back-up files when conflicts occur
 *.orig
 
-# cmake cache
+# CMake
 CMakeCache.txt
 CMakeFiles*
+
+# PyPI
+.pypirc
