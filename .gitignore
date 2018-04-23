@@ -32,3 +32,6 @@ CMakeFiles*
 
 # PyPI
 .pypirc
+
+# Python egg
+*.egg-info
