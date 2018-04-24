@@ -35,3 +35,6 @@ CMakeFiles*
 
 # Python egg
 *.egg-info
+
+# macOS temp
+.DS_Store
