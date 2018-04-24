@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(BinaryThinningImageFilter3D)
+project(BinaryThinning3D)
 
 if(NOT ITK_SOURCE_DIR)
   find_package(ITK REQUIRED)

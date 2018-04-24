@@ -1,4 +1,4 @@
-ITKBinaryThinningImageFilter3D
+ITKBinaryThinning3D
 ==============================
 
 **An ITK module to compute 3D image skeleton**
@@ -18,7 +18,7 @@ ITKBinaryThinningImageFilter3D
 
 ITK currently comes with a 2D binary thinning (skeletonisation) method, but does not support 3D or higher.
 
-This contribution implements a new itkBinaryThinningImageFilter3D that can find all deletable surface points at every iteration and is thus very fast.
+This contribution implements a new itk::BinaryThinningImageFilter3D that can find all deletable surface points at every iteration and is thus very fast.
 
 Overview
 --------
@@ -40,11 +40,11 @@ Installation
 Python
 ^^^^^^
 
-Binary `Python packages <https://pypi.python.org/pypi/itk-binarythinningimagefilter3d>`_
+Binary `Python packages <https://pypi.python.org/pypi/itk-binarythinning3d>`_
 are available for Linux, macOS, and Windows. They can be installed with::
 
   python -m pip install --upgrade pip
-  python -m pip install itk-binarythinningimagefilter3d
+  python -m pip install itk-binarythinning3d
 
 
 License
@@ -57,6 +57,8 @@ the *LICENSE* file for details.
 
 Acknowledgements
 ----------------
+
+**This module is under testing, should not be used in production yet !**
 
 This contribution is only a python wrapping of the original Insight Journal, no changes have been made to the code.  
 

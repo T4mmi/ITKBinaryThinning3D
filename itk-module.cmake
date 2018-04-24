@@ -3,15 +3,15 @@
 get_filename_component(MY_CURRENT_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 file(READ "${MY_CURRENT_DIR}/README.rst" DOCUMENTATION)
 
-# itk_module() defines the module dependencies in BinaryThinningImageFilter3D
-# BinaryThinningImageFilter3D depends on ITKCommon
-# The testing module in BinaryThinningImageFilter3D depends on ITKTestKernel
-# and ITKMetaIO(besides BinaryThinningImageFilter3D and ITKCore)
+# itk_module() defines the module dependencies in BinaryThinning3D
+# BinaryThinning3D depends on ITKCommon
+# The testing module in BinaryThinning3D depends on ITKTestKernel
+# and ITKMetaIO(besides BinaryThinning3D and ITKCore)
 # By convention those modules outside of ITK are not prefixed with
 # ITK.
 
 # define the dependencies of the include module and the tests
-itk_module(BinaryThinningImageFilter3D
+itk_module(BinaryThinning3D
   DEPENDS
     ITKCommon
     ITKImageFilterBase
