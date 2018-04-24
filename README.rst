@@ -3,12 +3,12 @@ ITKBinaryThinning3D
 
 **An ITK module to compute 3D image skeleton**
 
-.. |CircleCI| image:: https://circleci.com/gh/T4mmi/ITKBinaryThinningImageFilter3D.svg?style=shield
-    :target: https://circleci.com/gh/T4mmi/ITKBinaryThinningImageFilter3D
-.. |TravisCI| image:: https://travis-ci.org/T4mmi/ITKBinaryThinningImageFilter3D.svg?branch=master
-    :target: https://travis-ci.org/T4mmi/ITKBinaryThinningImageFilter3D
-.. |AppVeyor| image:: https://img.shields.io/appveyor/ci/T4mmi/ITKBinaryThinningImageFilter3D.svg
-    :target: https://ci.appveyor.com/project/T4mmi/itkbinarythinningimagefilter3d
+.. |CircleCI| image:: https://circleci.com/gh/T4mmi/ITKBinaryThinning3D.svg?style=shield
+    :target: https://circleci.com/gh/T4mmi/ITKBinaryThinning3D
+.. |TravisCI| image:: https://travis-ci.org/T4mmi/ITKBinaryThinning3D.svg?branch=master
+    :target: https://travis-ci.org/T4mmi/ITKBinaryThinning3D
+.. |AppVeyor| image:: https://img.shields.io/appveyor/ci/T4mmi/ITKBinaryThinning3D.svg
+    :target: https://ci.appveyor.com/project/T4mmi/ITKBinaryThinning3D
     
 =========== =========== ===========
    Linux      macOS       Windows
