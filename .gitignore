@@ -4,37 +4,31 @@
 # back-up files
 *~
 *.bak
+*.orig
 
 # KWStyle hook output
 *.kws
 
 # compiled python files
 *.pyc
+*.egg-info
 
 # Binary directory
 BUILD*
 build*
 dist*
 
-# qtcreator
-CMakeLists.txt.user*
-
-# kdevelop
+# IDE config
 *.kdev*
 .kdev*
-
-# back-up files when conflicts occur
-*.orig
+.vscode*
+.atom*
 
 # CMake
+CMakeLists.txt.user*
 CMakeCache.txt
 CMakeFiles*
 
-# PyPI
-.pypirc
-
-# Python egg
-*.egg-info
-
-# macOS temp
+# OS temp
 .DS_Store
+
