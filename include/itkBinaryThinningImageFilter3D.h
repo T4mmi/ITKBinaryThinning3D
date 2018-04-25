@@ -76,7 +76,7 @@ public:
   /** Type for input image. */
   typedef TInputImage InputImageType;
 
-  /** Type for output image: Skelenton of the object.  */
+  /** Type for output image: Skeleton of the object.  */
   typedef TOutputImage OutputImageType;
 
   /** Type for the region of the input image. */
@@ -109,7 +109,7 @@ public:
   /** Neighborhood type */
   typedef typename NeighborhoodIteratorType::NeighborhoodType NeighborhoodType;
 
-  /** Get Skelenton by thinning image. */
+  /** Get Skeleton by thinning image. */
   OutputImageType *GetThinning(void);
 
   /** ImageDimension enumeration   */
