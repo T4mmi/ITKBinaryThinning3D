@@ -37,8 +37,8 @@ BinaryThinningImageFilter3D<TInputImage, TOutputImage>::BinaryThinningImageFilte
 
     this->SetNumberOfRequiredOutputs(1);
 
-    OutputImagePointer thinImage = OutputImageType::New();
-    this->SetNthOutput(0, thinImage.GetPointer());
+    // OutputImagePointer thinImage = OutputImageType::New();
+    // this->SetNthOutput(0, thinImage.GetPointer());
 }
 
 /**
