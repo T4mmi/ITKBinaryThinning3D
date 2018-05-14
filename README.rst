@@ -58,7 +58,7 @@ the *LICENSE* file for details.
 Acknowledgements
 ----------------
 
-**This module is under testing, should not be used in production yet !**
+**This module only supports ITKv4 at the moment, working on ITKv5...**
 
 This contribution is only a python wrapping of the original Insight Journal, no changes have been made to the code.  
 
