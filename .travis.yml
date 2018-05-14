@@ -26,5 +26,4 @@ deploy:
   edge:
     branch: v1.8.45
   on:
-    branch: master
     tag: true
