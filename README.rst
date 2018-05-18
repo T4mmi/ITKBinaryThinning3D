@@ -58,8 +58,6 @@ the *LICENSE* file for details.
 Acknowledgements
 ----------------
 
-**This module is under testing, should not be used in production yet !**
-
 This contribution is only a python wrapping of the original Insight Journal, no changes have been made to the code.  
 
 The test image was converted from `uint16` DICOM to `uint8` TIFF format to avoid GDCM type errors.
