@@ -58,7 +58,7 @@ namespace itk
 */
 
 template <class TInputImage, class TOutputImage>
-class BinaryThinningImageFilter3D : public ImageToImageFilter<TInputImage, TOutputImage>
+class ITK_TEMPLATE_EXPORT BinaryThinningImageFilter3D : public ImageToImageFilter<TInputImage, TOutputImage>
 {
 public:
   /** Standard class typedefs. */
