@@ -46,6 +46,10 @@ are available for Linux, macOS, and Windows. They can be installed with::
   python -m pip install --upgrade pip
   python -m pip install itk-binarythinning3d
 
+For ITK v5, use the pre-release::
+
+  python -m pip install --upgrade pip
+  python -m pip install --pre itk-binarythinning3d
 
 License
 -------
