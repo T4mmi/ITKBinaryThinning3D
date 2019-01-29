@@ -1,4 +1,6 @@
 itk_wrap_class("itk::BinaryThinningImageFilter3D" POINTER)
   UNIQUE(wrap_image_types "${WRAP_ITK_SCALAR};UC")
-  itk_wrap_image_filter("${wrap_image_types}" 3)
+  foreach(type ${wrap_image_types})
+    itk_wrap_image_filter_combinations("${type}" "${type}" 3)
+  endforeach()
 itk_end_wrap_class()
