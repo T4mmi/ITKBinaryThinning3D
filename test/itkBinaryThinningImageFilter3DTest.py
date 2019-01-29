@@ -14,7 +14,7 @@ import itk
 import warnings
 
 
-def BinaryThinningImageFilter3DTest(source, destination=None):
+def itkBinaryThinningImageFilter3DTest(source, destination=None):
     ''' Basic ITK pipeline using BinaryThinningImageFilter3D
 
     Read input image -> Skeletonize -> Write output image
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     Second argument is treated as the output image filename (if none, replace the input).
 
     Example:
-        $ python BinaryThinningImageFilter3DTest.py
+        $ python itkBinaryThinningImageFilter3DTest.py
 
     '''
     if len(sys.argv) == 1:
@@ -89,10 +89,10 @@ if __name__ == '__main__':
                 "Could not access `__file__` attribute, using `os.getcwd()` instead",
                 RuntimeWarning)
             CWD = os.getcwd()
-        BinaryThinningImageFilter3DTest(
+        itkBinaryThinningImageFilter3DTest(
             os.path.join(CWD, 'Input', 'input.tif'), 'skeleton.tif')
     elif len(sys.argv) == 2:
-        BinaryThinningImageFilter3DTest(sys.argv[1], sys.argv[1])
+        itkBinaryThinningImageFilter3DTest(sys.argv[1], sys.argv[1])
     else:
-        BinaryThinningImageFilter3DTest(sys.argv[1], sys.argv[2])
+        itkBinaryThinningImageFilter3DTest(sys.argv[1], sys.argv[2])
     sys.exit(0)
