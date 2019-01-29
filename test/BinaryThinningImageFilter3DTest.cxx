@@ -25,7 +25,7 @@
 #include <stdlib.h> // for atoi()
 using namespace std;
 
-int itkBinaryThinningImageFilter3DTest(int argc, char *argv[])
+int BinaryThinningImageFilter3DTest(int argc, char *argv[])
 {
   // Verify the number of parameters in the command line
   if (argc <= 2)

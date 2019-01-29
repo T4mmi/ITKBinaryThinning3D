@@ -1,15 +1,13 @@
 itk_module_test()
 
-#${itk-module} will be the name of this module and will not need to be
-#changed when this module is renamed.
+set(BinaryThinningImageFilter3DTests
+  BinaryThinningImageFilter3DTest.cxx
+  )
 
-set(${itk-module}Tests
-  itkBinaryThinningImageFilterTest.cxx
-)
+CreateTestDriver(BinaryThinningImageFilter3D "${BinaryThinningImageFilter3D-Test_LIBRARIES}" "${BinaryThinningImageFilter3DTests}")
 
-CreateTestDriver(${itk-module}  "${${itk-module}-Test_LIBRARIES}" "${ITK${itk-module}Tests}")
-
-itk_add_test(NAME itkBinaryThinningImageFilterTest
-  COMMAND ${itk-module}TestDriver  itkBinaryThinningImageFilterTest
-  DATA{Input/input.tif} ${ITK_TEST_OUTPUT_DIR}/medial_axis.tif
-)
+itk_add_test(NAME BinaryThinningImageFilter3DTest
+  COMMAND BinaryThinningImageFilter3DTestDriver
+  BinaryThinningImageFilter3DTest
+  DATA{Data/input.tif} DATA{Data/output.tif}
+  )
