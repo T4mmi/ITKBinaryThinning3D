@@ -7,10 +7,10 @@ set(${itk-module}Tests
   itkBinaryThinningImageFilterTest.cxx
 )
 
-CreateTestDriver(${itk-module}  "${${itk-module}-Test_LIBRARIES}" "${ITK${itk-module}Tests}")
+CreateTestDriver(${itk-module}  "${${itk-module}-Test_LIBRARIES}" "${${itk-module}Tests}")
 
 itk_add_test(NAME itkBinaryThinningImageFilter3DTest
-  COMMAND ${itk-module}TestDriver 
+  COMMAND ${itk-module}TestDriver
   itkBinaryThinningImageFilter3DTest
   DATA{Input/input.tif} ${ITK_TEST_OUTPUT_DIR}/skeleton.tif
-  )
+)
