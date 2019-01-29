@@ -4,7 +4,7 @@ itk_module_test()
 #changed when this module is renamed.
 
 set(${itk-module}Tests
-  itkBinaryThinningImageFilterTest.cxx
+  itkBinaryThinningImageFilter3DTest.cxx
 )
 
 CreateTestDriver(${itk-module}  "${${itk-module}-Test_LIBRARIES}" "${${itk-module}Tests}")
