@@ -9,5 +9,5 @@ CreateTestDriver(BinaryThinningImageFilter3D "${BinaryThinningImageFilter3D-Test
 itk_add_test(NAME BinaryThinningImageFilter3DTest
   COMMAND BinaryThinningImageFilter3DTestDriver
   BinaryThinningImageFilter3DTest
-  DATA{Data/input.tif} DATA{Data/output.tif}
+  DATA{Input/input.tif} ${ITK_TEST_OUTPUT_DIR}/skeleton.tif
   )

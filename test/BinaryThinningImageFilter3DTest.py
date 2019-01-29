@@ -90,9 +90,7 @@ if __name__ == '__main__':
                 RuntimeWarning)
             CWD = os.getcwd()
         BinaryThinningImageFilter3DTest(
-            os.path.join(CWD, 'Data', 'input.tif'),
-            os.path.join(CWD, 'Data', 'output.tif')
-        )
+            os.path.join(CWD, 'Input', 'input.tif'), 'skeleton.tif')
     elif len(sys.argv) == 2:
         BinaryThinningImageFilter3DTest(sys.argv[1], sys.argv[1])
     else:
