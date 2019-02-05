@@ -7,9 +7,10 @@
 
 ITKBinaryThinning3D
 ==============================
-![CircleCI][CircleCI] ![TravisCI][TravisCI] ![Appveyor][Appveyor] ![Python version][Python version] ![PyPI version][PyPI version] 
 
 **An ITK module to compute 3D image skeleton**
+
+![CircleCI][CircleCI] ![TravisCI][TravisCI] ![Appveyor][Appveyor] ![Python version][Python version] ![PyPI version][PyPI version] 
 
 ITK currently comes with a 2D binary thinning (skeletonisation) method, but does not support 3D or higher.  
 This contribution implements a new itk::BinaryThinningImageFilter3D that can find all deletable surface points at every iteration and is thus very fast.
@@ -30,25 +31,25 @@ For more information, see the [Insight Journal article](http://hdl.handle.net/19
 
 ### Filters
 
--   **[`itk::BinaryThinningImageFilter3D<TInputImage, TOutputImage>`](include/itkBinaryThinningImageFilter3D.h)**: Compute the 3D skeleton of the input image.
+- **[`itk::BinaryThinningImageFilter3D<TInputImage, TOutputImage>`](include/itkBinaryThinningImageFilter3D.h)**: Compute the 3D skeleton of the input image.
 
 ### Warnings
-The *filtered/output/skeleton* image is a **pseudo binary** image coded with `0` and `1`, be sure to visualize it with the correct lookup table. **Blank output image might just be the effect of the viewer**, you might have to check the actual values (see [issue #4](https://github.com/T4mmi/ITKBinaryThinning3D/issues/4#issuecomment-455090984)).
+The *filtered/output/skeleton* image is a **pseudo binary image coded with `0` and `1`**, be sure to visualize it with the correct lookup table. *Blank output image might just be the effect of the viewer*, you might have to check manually the actual values (see [issue #4](https://github.com/T4mmi/ITKBinaryThinning3D/issues/4#issuecomment-455090984)).
+
 
 Installation
 ------------
 
-### Python 
-
 Binary [python packages](https://pypi.python.org/pypi/itk-binarythinning3d) are available for Linux, macOS, and Windows. They can be installed with:
 ```
-python -m pip install --upgrade pip
-python -m pip install itk-binarythinning3d
+  python -m pip install --upgrade pip
+  python -m pip install itk-binarythinning3d
 ```
 
 
 Usage
 -----
+
 Once ITK imported, you can use the `itk.BinaryThinningImageFilter3D` just as any other [ITK methods](https://itkpythonpackage.readthedocs.io/en/latest/Quick_start_guide.html):
 ```
 skeleton = itk.BinaryThinningImageFilter3D.New(image)
@@ -79,5 +80,8 @@ Please see the *LICENSE* file for details.
 Acknowledgements
 ----------------
 
-**This contribution is only a python wrapping of the original Insight Journal post**, no *significant* changes have been made to the code.  
-*The original test image was converted from `uint16` DICOM to `uint8` TIFF format to avoid GDCM type errors.*
+**This contribution is only a python wrapping of the original Insight Journal post**  
+*No significant changes have been made to the source code*:
+- Wrapping was done using this [documention](https://itkpythonpackage.readthedocs.io/en/latest/Build_ITK_Module_Python_packages.html).
+- The original test image was converted from `uint16` DICOM to `uint8` TIFF format to avoid GDCM errors.
+- Source files were slightly changed to be wrapped and pass KWStyle tests.
