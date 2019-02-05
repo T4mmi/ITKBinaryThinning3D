@@ -13,7 +13,7 @@ except ImportError:
 
 setup(
     name='itk-binarythinning3d',
-    version='5.0b1',
+    version='4.0',
     author='Insight Software Consortium',
     author_email='itk+community@discourse.itk.org',
     packages=['itk'],
@@ -44,6 +44,6 @@ setup(
     keywords='ITK InsightToolkit',
     url=r'https://itk.org/',
     install_requires=[
-        r'itk>=5.0b1'
+        r'itk>=4,<5'
     ]
     )
